@@ -80,29 +80,29 @@ function Cadastro() {
           <input type="text"
             id="nome"
             name="nome"
-            placeholder="Nome"
+            placeholder="Fulano da Silva"
             className="border-2 border-slate-700 rounded p-2"
             value={usuario.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
         </div>
 
         <div className="flex flex-col w-full">
-          <label htmlFor="usuario">Usuario</label>
+          <label htmlFor="usuario">Email</label>
           <input type="text"
             id="usuario"
             name="usuario"
-            placeholder="Usuario"
+            placeholder="nome@exemplo.com"
             className="border-2 border-slate-700 rounded p-2"
             value={usuario.usuario}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
         </div>
 
         <div className="flex flex-col w-full">
-          <label htmlFor="foto">Foto</label>
+          <label htmlFor="foto">Foto (Insira uma URL)</label>
           <input type="text"
             id="foto"
             name="foto"
-            placeholder="Foto"
+            placeholder="https://www.facebook.com/photo/?fbid=2188360382417420"
             className="border-2 border-slate-700 rounded p-2"
             value={usuario.foto}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
