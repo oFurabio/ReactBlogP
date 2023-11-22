@@ -21,8 +21,9 @@ function CardPostagens({ post }: CardPostagensProps) {
                     <p>{post.texto}</p>
                     <p>Tema: {post.tema?.descricao}</p>
                     <p>Data: {new Intl.DateTimeFormat(undefined, {
-                        dateStyle: 'full',
-                        timeStyle: 'medium',
+                        dateStyle: 'short',
+                        timeStyle: 'short',
+                        timeZone: 'America/Sao_Paulo',
                     }).format(new Date(post.data))}</p>
                 </div>
             </div>
